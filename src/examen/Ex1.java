@@ -12,11 +12,6 @@ public class Ex1 {
             if(matriu[i] == false){
                 numPrimers++;
                 for(int j = i+1; j <= num ; j++){
-                    if(matriu[j] == false){
-                        if(j%i == 0){
-                            matriu[j] = true;                           
-                        }
-                    }
                 }
             }   
         }
@@ -29,6 +24,7 @@ public class Ex1 {
                 primers[tempPrimers] = i;
                 tempPrimers++;
             }
+            System.out.println("Hola");
         }
         
         return primers;
